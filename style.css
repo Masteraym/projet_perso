@@ -1,0 +1,538 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+        /*      PAGE ACCEUIL        */
+.header{
+    position: sticky;
+    height: 7vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.footer{
+    position: sticky;
+    height: 7vh;
+    width: 100%;
+    background-color: black;
+}       /*          MA NAV          */
+.MaNav{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.MaNav  a {
+    height: 100%;
+    width:7vh;
+   
+}
+.MaNav a .MonLogo {
+     height: 100%;
+    width: 100%;
+    background-image: url(imageACCEUIL/legsconfort.png);
+    background-size: cover;
+    background-position: center ;
+}
+
+.MenuHamburgeurDown{
+    display: none;
+}
+.MenuHamburgeurUp{ 
+    display: none;
+}
+.MaNavListe{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.MaNavListe a {
+    color: white;
+}
+.NavExtention{
+    width: 100%;
+    height: 30vh;
+    display: none;
+    background-color: black;
+}
+.NavExtention .liste{
+    height: 100%;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+    /* grid-column-gap: 20px; */
+    
+    
+}
+.NavExtention .liste .ListeElementExtention{
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.NavExtention .liste .ListeElementExtention li{
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+   
+}
+        /*          Section1Page1         */
+.Section1Page1{
+    min-height: 86vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}
+.TitreP1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20%;
+    width: 80%;
+    
+}
+.TitreP1 p {
+    margin-top: 2vh;
+}
+.SectionChoixSex{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.DivMoyenneTaille{
+    height: 50vh;
+    width: 25%;
+    border: 2px solid black;
+}
+.DivMoyenneTaille h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: black;
+}
+.homme{
+    background-image: url(imageACCEUIL/image.png);
+    background-size: cover;
+    background-position: center ;
+}
+.enfant{
+    background-image: url(imageACCEUIL/asics-kids-tech-hero-08112022-1.jpg);
+    background-size: cover;
+    background-position: center ;
+}
+.femme{
+    background-image: url(imageACCEUIL/GIRL.jpg);
+    background-size: cover;
+    background-position: center ;
+}
+            /*          Effet au passage de la souris sur mes img          */
+.DivMoyenneTaille:hover{
+    cursor: pointer;
+    filter: opacity(0.2);
+}
+            /*          MEDIA QUERY PAGE 1          */
+@media (max-width: 950px) {
+    .MenuHamburgeurDown{
+        height: 7vh;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .MenuHamburgeurUp{
+        height: 7vh;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    } 
+    .MaNavListe{
+        justify-content: flex-end;
+    }
+    .ListeElement{
+        display: none;
+    }
+}
+@media (max-width: 732px){
+    .SectionChoixSex{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+    }
+    .DivMoyenneTaille{
+        width: 100%;
+        height:15vh;
+        margin-bottom: 2vh;
+    }
+}
+            /*          PAGE ENFANT         */
+.Section1PageEnfant{
+    min-height: 86vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MesArticlesPageEnfant{
+    margin-top: 2vh;
+    height: 30vh;
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Titre1PageEnfant{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+.article1PageEnfant{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageEnfant/asics-gel-noosa-tri-13-junior-chaussures-homme-583617-1-fz\ \(2\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+.article2PageEnfant{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageEnfant/asics-gt-1000-11-m-chaussures-homme-589825-1-fz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.article3PageEnfant{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageEnfant/asics-patriot-12-ps-junior-chaussures-homme-525060-1-fz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.article4PageEnfant{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageEnfant/asics-novablast-2-junior-chaussures-homme-572701-1-fz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.article5PageEnfant{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageEnfant/asics-gel-quantum-90-junior-chaussures-homme-619436-1-fz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.article6PageEnfant{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageEnfant/asics-jolt-4-junior-chaussures-homme-619391-1-fz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+            /*          PAGE FEMME          */
+.Section1PageFemme{
+    min-height: 86vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MesArticlesPageFemme{
+    margin-top: 2vh;
+    height: 30vh;
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    cursor: pointer;  
+}
+.Titre1PageFemme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+.article1PageFemme{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageFemme/asics-gel-kayano-29-platinum-w-chaussures-running-femme-583614-1-fz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.article2PageFemme{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageFemme/asics-gel-nimbus-25-w-chaussures-running-femme-606841-1-fz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.article3PageFemme{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageFemme/asics-gel-nimbus-24-w-chaussures-running-femme-584499-1-fz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.article4PageFemme{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageFemme/asics-gt-4000-3-w-chaussures-running-femme-551877-1-fz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.article5PageFemme{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageFemme/asics-gel-kayano-29-lite-show-w-chaussures-running-femme-623583-1-fz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.article6PageFemme{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageFemme/asics-noosa-tri-14-w-chaussures-running-femme-580838-1-fz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.Prix{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+            /*          PAGE HOMME          */
+.Section1PageHomme{
+    min-height: 86vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.MesArticlesPageHomme{
+    margin-top: 2vh;
+    height: 30vh;
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    cursor: pointer;
+}  
+.Titre1PageHomme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+.article1PageHomme{
+    width: 250px;
+    height:250px;
+    
+    background-image: url(./imageHomme/toto2.png);
+    background-size: cover;
+    background-position: center;
+}
+            
+.InfoArticle{               /* //InfoArticle est utiliser sur la page homme femme et enfant  */                       
+    width: 55%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    
+    flex-direction: column;
+    
+}
+.article2PageHomme{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageHomme/ASICS\ Gel\ Pulse\ 13.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.article3PageHomme{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageHomme/ASICS\ Hyper\ Speed.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.article4PageHomme{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageHomme/ASICS\ Patriot\ 12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.article5PageHomme{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageHomme/ASICS\ Gel\ Ziruss\ 3.png);
+    background-size: cover;
+    background-position: center;
+}
+.article6PageHomme{
+    width: 250px;
+    height:250px;
+    background-image: url(./imageHomme/ASICS\ Gel\ Superion\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#Margebot7vh{
+    margin-bottom: 7vh;
+}
+            /*          MEDIA QUERRY PAGE HOMME ENFANT FEMME       */
+@media (max-width:1100px){
+    .InfoArticle p {
+        display: none;
+        width: 50%;
+    }
+    .Prix{
+        margin-right: 20px;
+    }
+}
+@media (max-width:770px){
+    .Prix{
+        display: none;
+    }
+}
+
+            /*          PAGE SERVICE        */
+.Section1PageService{
+    height: 86vh;
+}    
+            /*          PAGE CONTACT        */
+.Section1PageContact{
+    height: 86vh;
+} 
+
+
+
+            /*          PAGE CONNEXION      */
+.Section1PageConnection{
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+.Section1PageConnection .FormCo{
+    height: 70%;
+    width: 60%;
+    border-radius: 17px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.FormCo div{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.FormCo .divbuttonSub{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.FormCo .MesInput{
+    height: 3vh;
+    width: 40%;
+    font-size: large;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.buttonConnection{
+    height: 25%;
+    width: 20%;
+    border-radius: 47px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+            /*          PAGE INSCRIPTION    */
+.Section1PageInscription{
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+.Section1PageInscription .FormIn{
+    height: 70%;
+    width: 60%;
+    border-radius: 17px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.Section1PageInscription .FormIn .divinput{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.Section1PageInscription .FormIn .divinscription{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MesinputsPI{
+    height: 3vh;
+    width: 40%;
+    font-size: large;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.buttonInscription{
+    height: 25%;
+    width: 20%;
+    border-radius: 47px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
